@@ -6,6 +6,6 @@ build:
     web: Dockerfile
   config:
     WORKDIR: app
-    API_URL: "https://techbookhub-api.herokuapp.com/api/v1/hello"
+    API_URL: "https://techbookhub-api.herokuapp.com"
 run:
   web: yarn run start
