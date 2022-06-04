@@ -2,9 +2,11 @@
   <v-app>
     <home-app-bar
       :menus="menus"
+      :img-height="imgHeight"
     />
 
     <v-img
+      id="scroll-top"
       dark
       src="https://picsum.photos/id/20/1920/1080?blur=5"
       gradient="to top right, rgba(19,84,122,.6), rgba(128,208,199,.9)"
@@ -20,7 +22,7 @@
           class="text-center"
         >
           <h1 class="display-1 mb-4">
-            未来を作ろう。ワクワクしようa。
+            未来を作ろう。ワクワクしよう。
           </h1>
           <h4
             class="subheading"
@@ -43,6 +45,7 @@
         >
 
         <v-col
+          :id="menu.title"
           cols="12"
         >
           <v-card flat>
