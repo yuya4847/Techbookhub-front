@@ -10,7 +10,7 @@
         <user-form-email />
         <user-form-password />
         <v-btn
-          :disabled="true"
+          :disabled="!isValid"
           block
           color="appblue"
           class="white--text"
