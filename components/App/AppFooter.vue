@@ -36,7 +36,8 @@ export default {
       const beginningYear = 2020
       const thisYear = new Date().getFullYear()
       return (beginningYear < thisYear)
-        ? `${beginningYear} - ${thisYear}` : beginningYear
+        ? `${beginningYear} - ${thisYear}`
+        : beginningYear
     }
   }
 }

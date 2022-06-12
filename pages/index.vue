@@ -43,20 +43,19 @@
           v-for="(menu, i) in menus"
           :key="`menu-${i}`"
         >
-
-        <v-col
-          :id="menu.title"
-          cols="12"
-        >
-          <v-card flat>
-            <v-card-title class="justify-center display-1">
-              {{ $t(`menus.${menu.title}`) }}
-            </v-card-title>
-            <v-card-text class="text-center">
-              {{ menu.subtitle }}
-            </v-card-text>
-          </v-card>
-        </v-col>
+          <v-col
+            :id="menu.title"
+            cols="12"
+          >
+            <v-card flat>
+              <v-card-title class="justify-center display-1">
+                {{ $t(`menus.${menu.title}`) }}
+              </v-card-title>
+              <v-card-text class="text-center">
+                {{ menu.subtitle }}
+              </v-card-text>
+            </v-card>
+          </v-col>
 
           <v-col cols="12">
             <div :is="`home-${menu.title}`" />

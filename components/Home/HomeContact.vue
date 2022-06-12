@@ -81,7 +81,7 @@
     >
       お問合せ内容が送信されました。メールアドレスへ担当者よりご連絡いたします。
       <template
-        v-slot:action="{ attrs }"
+        #action="{ attrs }"
       >
         <v-btn
           color="white"

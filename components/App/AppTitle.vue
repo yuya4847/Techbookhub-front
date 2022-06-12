@@ -1,6 +1,6 @@
 <template>
   <v-toolvar-title>
-    {{appName}}
+    {{ appName }}
   </v-toolvar-title>
 </template>
 

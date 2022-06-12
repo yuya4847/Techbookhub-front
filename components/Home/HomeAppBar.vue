@@ -29,17 +29,15 @@
         {{ $t(`menus.${menu.title}`) }}
       </v-btn>
     </v-toolbar-items>
-
-    <app-signup-button />
-    <app-login-button />
-
+    <before-login-app-bar-signup-button />
+    <before-login-app-bar-login-button />
     <v-menu
       bottom
       nudge-left="110"
       nudge-width="100"
     >
       <template
-        v-slot:activator="{ on }"
+        #activator="{ on }"
       >
         <v-app-bar-nav-icon
           class="hidden-ipad-and-up"
@@ -62,7 +60,6 @@
         </v-list-item>
       </v-list>
     </v-menu>
-
   </v-app-bar>
 </template>
 
