@@ -97,7 +97,9 @@
     </v-parallax>
     <!-- 全てのプロジェクト -->
     <v-container>
-      <v-row justify="center">
+      <v-row
+        justify="center"
+      >
         <v-col
           cols="12"
           :sm="container.sm"
@@ -115,7 +117,9 @@
             item-key="id"
             hide-default-footer
           >
-            <template v-slot:item.name="{ item }">
+            <template
+              v-slot:item.name="{ item }"
+            >
               <nuxt-link
                 :to="$my.projectLinkTo(item.id)"
                 class="text-decoration-none"
@@ -123,7 +127,9 @@
                 {{ item.name }}
               </nuxt-link>
             </template>
-            <template v-slot:item.updatedAt="{ item }">
+            <template
+              v-slot:item.updatedAt="{ item }"
+            >
               {{ $my.dateFormat(item.updatedAt) }}
             </template>
           </v-data-table>
