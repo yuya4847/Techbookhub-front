@@ -1,4 +1,4 @@
-<template>
+><template>
   <v-app>
     <home-app-bar
       :menus="menus"
